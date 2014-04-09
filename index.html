@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Creative Coding for Live Audio and Visuals</title>
+
+		<meta name="description" content="Main slideshow for the Generative Graphics with openFrameworks on the Raspberry Pi workshop">
+		<meta name="author" content="Krisjanis Rijnieks">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/solarized.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<style>
+			.main-menu {
+				text-align: right;
+
+			}
+
+			.main-menu a {
+				display: inline-block;
+				padding: 5px 10px;
+				text-decoration: none;
+				color: black;
+				text-transform: uppercase;
+				font-weight: bold;
+			}
+
+			.main-menu a:hover {
+				color: gray;
+			}
+		</style>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<div class="main-menu">
+			<a href="#">Home</a>
+		</div>
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>CC4AV</h1>
+					<h3>Creative Coding for Live Audio and Visuals</h3>
+					<p>April 7 - 13, Helsinki</p>
+				</section>
+
+				<section>
+					<h2>Wireless</h2>
+					<ol>
+						<li><b>Aalto Open</b></li>
+						<li><b>Aalto Fablab</b> (aaltofablab)</li>
+						<li><b>Media Factory</b> (makecoffeenotwar)</li>
+						
+					</ol>
+				</section>
+
+				<section>
+					<h2>This file</h2>
+					<p>Access this presentation by following the following link:<br><a href="http://kr15h.github.io/cc4av-2014-01-helsinki/">http://kr15h.github.io/cc4av-2014-01-helsinki/</a></p>
+				</section>
+
+				<section>
+					<h2>Schedule</h2>
+					<ul>
+						<li><b>07.05</b> Fab Lab<br>Pi Install, oF and PD workshops</li>
+						<li><b>08.05</b> Media Factory Auditorium<br>PD workshop day 1</li>
+						<li><b>09.05</b> Fab Lab<br>PD workshop day 2</li>
+						<li><b>10.05</b> Fab Lab<br>oF workshop day 1</li>
+						<li><b>11.05</b> Fab Lab<br>oF workshop day 2</li>
+						<li><b>13.05</b> 16:00 MBar<br>Preparation for the jam session</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Instructions</h2>
+					<p>You can access the instructions by following this link:<br><a href="http://kr15h.github.io/RPi-Setup/">http://kr15h.github.io/RPi-Setup/</a></p>
+				</section>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
